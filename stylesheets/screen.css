@@ -1,0 +1,182 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1,
+header .title, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/partials/font-sizing.scss */
+h {
+  color: #FC3D21;
+}
+/* line 11, ../sass/partials/font-sizing.scss */
+h1, header .title {
+  font-size: 22px;
+}
+/* line 12, ../sass/partials/font-sizing.scss */
+h2 {
+  font-size: 30px;
+}
+/* line 13, ../sass/partials/font-sizing.scss */
+h3 {
+  font-size: 18px;
+}
+/* line 14, ../sass/partials/font-sizing.scss */
+h4 {
+  font-size: 16px;
+}
+/* line 15, ../sass/partials/font-sizing.scss */
+h5 {
+  font-size: 14px;
+}
+
+/* line 17, ../sass/partials/font-sizing.scss */
+h6, p {
+  font-size: 12;
+}
+
+/* line 11, ../sass/screen.scss */
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* line 16, ../sass/screen.scss */
+header {
+  border-bottom: 1px solid #000;
+}
+/* line 18, ../sass/screen.scss */
+header .logo-container {
+  text-decoration: none;
+}
+/* line 20, ../sass/screen.scss */
+header .logo-container .logo {
+  width: 157px;
+  padding: 8px;
+  position: relative;
+  top: 30px;
+  display: inline-block;
+}
+/* line 28, ../sass/screen.scss */
+header h1, header .title, header h2 {
+  color: #79797C;
+  font-weight: 100;
+  padding-bottom: 14px;
+}
+/* line 34, ../sass/screen.scss */
+header .title {
+  padding-bottom: 16px;
+  position: relative;
+  top: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 14px;
+}
+/* line 43, ../sass/screen.scss */
+header .watermark {
+  position: relative;
+  display: inline-block;
+  top: 50px;
+}
+/* line 47, ../sass/screen.scss */
+header .watermark h4 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+/* line 54, ../sass/screen.scss */
+.orientation-pos, .orientation-vel, .orientation-accel {
+  text-transform: uppercase;
+  color: #79797C;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+/* line 67, ../sass/screen.scss */
+.orientation-pos .value-display, .orientation-pos .label-x, .orientation-pos .label-y, .orientation-pos .label-z, .orientation-vel .value-display, .orientation-vel .label-x, .orientation-vel .label-y, .orientation-vel .label-z, .orientation-accel .value-display, .orientation-accel .label-x, .orientation-accel .label-y, .orientation-accel .label-z {
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 100;
+}
+/* line 72, ../sass/screen.scss */
+.orientation-pos .units, .orientation-vel .units, .orientation-accel .units {
+  font-size: 12;
+}
+/* line 77, ../sass/screen.scss */
+.orientation-vel {
+  border-left: 1px solid #79797C;
+  border-right: 1px solid #79797C;
+}
+
+/* line 83, ../sass/screen.scss */
+.lower-panel {
+  border-top: 1px solid #79797C;
+}
+
+/* line 87, ../sass/screen.scss */
+.guage-title h2 {
+  color: #FC3D21;
+  font-weight: 100;
+}

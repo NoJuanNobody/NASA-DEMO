@@ -1,0 +1,91 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "partials/colors";
+@import "partials/font-sizing";
+// @import "partials/mixins";
+
+body{
+  font-family: Helvetica, sans-serif;
+  font-size:$s;
+}
+
+header{
+  border-bottom:1px solid $black;
+  .logo-container{
+      text-decoration:none;
+    .logo{
+      width:157px;
+      padding:8px;
+      position:relative;
+      top:30px;
+      display:inline-block;
+    }
+  }
+  h1, h2{
+    color:$grey;
+    font-weight:100;
+    padding-bottom:14px;
+  }
+
+  .title{
+    @extend h1;
+    padding-bottom:16px;
+    position:relative;
+    top:12px;
+    text-transform:uppercase;
+    display:inline-block;
+    padding:14px;
+  }
+  .watermark{
+    position:relative;
+    display:inline-block;
+    top:50px;
+    h4{
+      font-size:18px;
+      font-weight:100;
+    }
+  }
+}
+.orientation{
+  &-pos, &-vel, &-accel{
+    text-transform:uppercase;
+    color:$grey;
+    margin-bottom:15px;
+    margin-top:15px;
+    .label{
+      &-x, &-y, &-z{
+        @extend .value-display;
+      }
+    }
+    .labels{
+
+    }
+    .value-display{
+      padding-top:10px;
+      font-size:$xl;
+      font-weight:100;
+    }
+    .units{
+      font-size:$xs;
+    }
+  }
+  &-pos{}
+  &-vel{
+    border-left:1px solid $grey;
+    border-right:1px solid $grey;
+  }
+  &-accel{}
+}
+.lower-panel{
+  border-top:1px solid $grey;
+}
+.guage-title{
+  h2{
+    color:$red;
+    font-weight: 100;
+  }
+}

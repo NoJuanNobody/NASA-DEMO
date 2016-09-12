@@ -1,0 +1,17 @@
+$xs:12;
+$xxs:$xs - 2px;
+$s:$xs + 2px;
+$m:$xs + 4px;
+$l:$xs + 6px;
+$xl:$xs + 18px;
+$xxl:$xs + 10px;
+
+h{
+  color:$red;
+  &1{font-size:$xxl;}
+  &2{font-size:$xl;}
+  &3{font-size:$l;}
+  &4{font-size:$m;}
+  &5{font-size:$s;}
+}
+h6,p{font-size:$xs;}
